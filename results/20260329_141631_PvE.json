@@ -1,0 +1,1163 @@
+{
+  "run_id": "20260329_141631",
+  "mode": "PvE",
+  "num_players": 2,
+  "attack_all": 0,
+  "seed": null,
+  "start_time": "2026-03-29T14:16:31.396874",
+  "end_time": "2026-03-29T14:18:58.824069",
+  "duration_s": 147.427,
+  "turns": 57,
+  "winner": "Player",
+  "player_ai_types": {},
+  "players": {
+    "0": {
+      "shots": 57,
+      "hits": 17,
+      "misses": 40,
+      "ships_sunk": 5,
+      "turns_alive": 57,
+      "survived": true
+    },
+    "1": {
+      "shots": 56,
+      "hits": 13,
+      "misses": 43,
+      "ships_sunk": 3,
+      "turns_alive": 57,
+      "survived": false
+    }
+  },
+  "shots": [
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 1,
+      "y": 1,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 1,
+      "ts": 1774808195.0956905
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 4,
+      "y": 8,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 1,
+      "ts": 1774808195.0956905
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 1,
+      "y": 8,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 2,
+      "ts": 1774808196.842607
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 1,
+      "y": 9,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 2,
+      "ts": 1774808196.842607
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 8,
+      "y": 1,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 3,
+      "ts": 1774808200.2152174
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 2,
+      "y": 0,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 3,
+      "ts": 1774808200.2161653
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 8,
+      "y": 8,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 4,
+      "ts": 1774808201.5424588
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 4,
+      "y": 4,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 4,
+      "ts": 1774808201.5424588
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 2,
+      "y": 2,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 5,
+      "ts": 1774808205.4627182
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 7,
+      "y": 3,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 5,
+      "ts": 1774808205.4627182
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 2,
+      "y": 3,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 6,
+      "ts": 1774808209.844922
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 7,
+      "y": 1,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 6,
+      "ts": 1774808209.844922
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 2,
+      "y": 4,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 7,
+      "ts": 1774808212.099296
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 9,
+      "y": 1,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 7,
+      "ts": 1774808212.099296
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 2,
+      "y": 1,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 8,
+      "ts": 1774808213.4900837
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 5,
+      "y": 1,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 8,
+      "ts": 1774808213.4910889
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 7,
+      "y": 2,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 9,
+      "ts": 1774808216.3371248
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 3,
+      "y": 3,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 9,
+      "ts": 1774808216.3371248
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 7,
+      "y": 7,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 10,
+      "ts": 1774808218.202491
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 6,
+      "y": 2,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 10,
+      "ts": 1774808218.202491
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 2,
+      "y": 7,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 11,
+      "ts": 1774808219.6514685
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 9,
+      "y": 7,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 11,
+      "ts": 1774808219.6514685
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 4,
+      "y": 5,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 12,
+      "ts": 1774808221.229771
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 6,
+      "y": 0,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 12,
+      "ts": 1774808221.229771
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 3,
+      "y": 5,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 13,
+      "ts": 1774808223.7710211
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 5,
+      "y": 5,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 13,
+      "ts": 1774808223.7710211
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 2,
+      "y": 5,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 14,
+      "ts": 1774808225.0229163
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 2,
+      "y": 4,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 14,
+      "ts": 1774808225.0229163
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 5,
+      "y": 5,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 15,
+      "ts": 1774808226.5843668
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 5,
+      "y": 7,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 15,
+      "ts": 1774808226.5843668
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 6,
+      "y": 5,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 16,
+      "ts": 1774808227.8036885
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 2,
+      "y": 8,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 16,
+      "ts": 1774808227.8036885
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 4,
+      "y": 7,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 17,
+      "ts": 1774808229.6930757
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 2,
+      "y": 9,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 17,
+      "ts": 1774808229.6930757
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 4,
+      "y": 3,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 18,
+      "ts": 1774808231.473966
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 2,
+      "y": 7,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 18,
+      "ts": 1774808231.473966
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 8,
+      "y": 4,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 19,
+      "ts": 1774808234.1509051
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 3,
+      "y": 8,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 19,
+      "ts": 1774808234.1509051
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 8,
+      "y": 6,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 20,
+      "ts": 1774808235.8236184
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 1,
+      "y": 8,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 20,
+      "ts": 1774808235.8236184
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 1,
+      "y": 5,
+      "hit": true,
+      "is_sunk": true,
+      "turn": 21,
+      "ts": 1774808237.9537368
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 2,
+      "y": 6,
+      "hit": true,
+      "is_sunk": true,
+      "turn": 21,
+      "ts": 1774808237.9537368
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 4,
+      "y": 1,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 22,
+      "ts": 1774808242.073222
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 3,
+      "y": 7,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 22,
+      "ts": 1774808242.073222
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 5,
+      "y": 8,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 23,
+      "ts": 1774808244.3246238
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 1,
+      "y": 7,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 23,
+      "ts": 1774808244.3246238
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 6,
+      "y": 3,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 24,
+      "ts": 1774808246.2755158
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 2,
+      "y": 5,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 24,
+      "ts": 1774808246.2755158
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 5,
+      "y": 4,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 25,
+      "ts": 1774808248.1343694
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 3,
+      "y": 6,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 25,
+      "ts": 1774808248.1343694
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 3,
+      "y": 6,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 26,
+      "ts": 1774808251.5537753
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 1,
+      "y": 6,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 26,
+      "ts": 1774808251.5537753
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 1,
+      "y": 3,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 27,
+      "ts": 1774808255.3918056
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 3,
+      "y": 1,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 27,
+      "ts": 1774808255.3918056
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 0,
+      "y": 3,
+      "hit": true,
+      "is_sunk": true,
+      "turn": 28,
+      "ts": 1774808256.6334496
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 2,
+      "y": 2,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 28,
+      "ts": 1774808256.6334496
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 3,
+      "y": 3,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 29,
+      "ts": 1774808260.6506345
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 9,
+      "y": 9,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 29,
+      "ts": 1774808260.6506345
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 1,
+      "y": 2,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 30,
+      "ts": 1774808264.2870681
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 7,
+      "y": 7,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 30,
+      "ts": 1774808264.2870681
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 9,
+      "y": 3,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 31,
+      "ts": 1774808268.0556986
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 1,
+      "y": 5,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 31,
+      "ts": 1774808268.0556986
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 6,
+      "y": 1,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 32,
+      "ts": 1774808270.6888628
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 5,
+      "y": 3,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 32,
+      "ts": 1774808270.6888628
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 9,
+      "y": 6,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 33,
+      "ts": 1774808272.4306238
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 8,
+      "y": 4,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 33,
+      "ts": 1774808272.4306238
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 9,
+      "y": 9,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 34,
+      "ts": 1774808274.033222
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 8,
+      "y": 5,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 34,
+      "ts": 1774808274.033222
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 6,
+      "y": 9,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 35,
+      "ts": 1774808275.8917637
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 8,
+      "y": 3,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 35,
+      "ts": 1774808275.8917637
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 3,
+      "y": 9,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 36,
+      "ts": 1774808277.6110346
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 9,
+      "y": 4,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 36,
+      "ts": 1774808277.6110346
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 3,
+      "y": 8,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 37,
+      "ts": 1774808279.5676663
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 7,
+      "y": 4,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 37,
+      "ts": 1774808279.5676663
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 0,
+      "y": 9,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 38,
+      "ts": 1774808281.659175
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 8,
+      "y": 6,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 38,
+      "ts": 1774808281.659175
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 0,
+      "y": 6,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 39,
+      "ts": 1774808284.210942
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 9,
+      "y": 5,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 39,
+      "ts": 1774808284.210942
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 3,
+      "y": 0,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 40,
+      "ts": 1774808286.0379984
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 7,
+      "y": 5,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 40,
+      "ts": 1774808286.0379984
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 7,
+      "y": 0,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 41,
+      "ts": 1774808287.3492777
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 8,
+      "y": 2,
+      "hit": true,
+      "is_sunk": true,
+      "turn": 41,
+      "ts": 1774808287.3492777
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 8,
+      "y": 0,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 42,
+      "ts": 1774808288.554099
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 9,
+      "y": 3,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 42,
+      "ts": 1774808288.554099
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 9,
+      "y": 0,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 43,
+      "ts": 1774808289.7131135
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 8,
+      "y": 7,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 43,
+      "ts": 1774808289.7131135
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 6,
+      "y": 0,
+      "hit": true,
+      "is_sunk": true,
+      "turn": 44,
+      "ts": 1774808290.6729374
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 9,
+      "y": 6,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 44,
+      "ts": 1774808290.6729374
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 5,
+      "y": 0,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 45,
+      "ts": 1774808291.6329637
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 7,
+      "y": 6,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 45,
+      "ts": 1774808291.6329637
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 0,
+      "y": 0,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 46,
+      "ts": 1774808295.2181697
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 8,
+      "y": 1,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 46,
+      "ts": 1774808295.2181697
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 5,
+      "y": 2,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 47,
+      "ts": 1774808299.214127
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 9,
+      "y": 2,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 47,
+      "ts": 1774808299.214127
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 5,
+      "y": 1,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 48,
+      "ts": 1774808300.4779944
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 7,
+      "y": 2,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 48,
+      "ts": 1774808300.4779944
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 6,
+      "y": 2,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 49,
+      "ts": 1774808301.2237852
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 6,
+      "y": 6,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 49,
+      "ts": 1774808301.2237852
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 4,
+      "y": 2,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 50,
+      "ts": 1774808302.0217173
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 6,
+      "y": 7,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 50,
+      "ts": 1774808302.0217173
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 3,
+      "y": 2,
+      "hit": true,
+      "is_sunk": true,
+      "turn": 51,
+      "ts": 1774808302.769851
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 6,
+      "y": 5,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 51,
+      "ts": 1774808302.769851
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 5,
+      "y": 3,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 52,
+      "ts": 1774808303.9139256
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 5,
+      "y": 6,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 52,
+      "ts": 1774808303.9139256
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 7,
+      "y": 4,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 53,
+      "ts": 1774808312.9362817
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 4,
+      "y": 6,
+      "hit": true,
+      "is_sunk": true,
+      "turn": 53,
+      "ts": 1774808312.9362817
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 5,
+      "y": 6,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 54,
+      "ts": 1774808314.8010545
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 4,
+      "y": 7,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 54,
+      "ts": 1774808314.8010545
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 1,
+      "y": 6,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 55,
+      "ts": 1774808331.4322612
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 4,
+      "y": 5,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 55,
+      "ts": 1774808331.4322612
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 1,
+      "y": 4,
+      "hit": false,
+      "is_sunk": false,
+      "turn": 56,
+      "ts": 1774808332.2578526
+    },
+    {
+      "shooter": 1,
+      "target": 0,
+      "x": 0,
+      "y": 4,
+      "hit": true,
+      "is_sunk": false,
+      "turn": 56,
+      "ts": 1774808332.2578526
+    },
+    {
+      "shooter": 0,
+      "target": 1,
+      "x": 0,
+      "y": 2,
+      "hit": true,
+      "is_sunk": true,
+      "turn": 57,
+      "ts": 1774808338.8240688
+    }
+  ]
+}

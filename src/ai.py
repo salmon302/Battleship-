@@ -13,6 +13,11 @@ logger = logging.getLogger(__name__)
 LEARN_FILE = Path(__file__).resolve().parent.parent / "results" / "ai_learning.json"
 
 
+def _learning_persistence_disabled() -> bool:
+    flag = os.environ.get("BATTLESHIP_DISABLE_LEARNING_PERSIST", "").strip().lower()
+    return flag in {"1", "true", "yes", "on"}
+
+
 def _load_store():
     try:
         if not LEARN_FILE.exists():
@@ -224,6 +229,7 @@ class HuntAndTargetAI(BaseAI):
     def __init__(self, board: Board, parity: int = 2):
         super().__init__(board)
         self.targets: List[Tuple[int, int]] = []
+        self.hits: List[Tuple[int, int]] = []
         self.parity = parity
     def get_shot_coordinates(self) -> Tuple[int, int]:
         if self.targets:
@@ -236,6 +242,7 @@ class HuntAndTargetAI(BaseAI):
         self.shots.add(shot)
         return shot
     def report_hit(self, x: int, y: int, is_sunk: bool):
+        self.hits.append((x, y))
         for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
             nx, ny = x + dx, y + dy
             if (0 <= nx < self.board.width and 0 <= ny < self.board.height and 
@@ -245,7 +252,8 @@ class HuntAndTargetAI(BaseAI):
 class QLearningAI(BaseAI):
     def __init__(self, board: Board, alpha: float = 0.3, epsilon: float = 0.1, persist: bool = True):
         super().__init__(board)
-        self.alpha, self.epsilon, self.persist = alpha, epsilon, persist
+        self.alpha, self.epsilon = alpha, epsilon
+        self.persist = persist and not _learning_persistence_disabled()
         size_key = f"{board.width}x{board.height}"
         store = _load_store()
         q_table = store.get(size_key, {}).get('q') if isinstance(store.get(size_key), dict) else None
@@ -273,7 +281,7 @@ class QLearningAI(BaseAI):
 class HeatmapAI(BaseAI):
     def __init__(self, board: Board, persist: bool = True):
         super().__init__(board)
-        self.persist = persist
+        self.persist = persist and not _learning_persistence_disabled()
         size_key = f"{board.width}x{board.height}"
         store = _load_store()
         heatmap = store.get(size_key, {}).get('heatmap') if isinstance(store.get(size_key), dict) else None
@@ -357,6 +365,23 @@ def create_pve_ai(ai_type: str, board: Board):
         return HeatmapAI(board)
     if key in ("qlearning", "ql", "qlearn"):
         return QLearningAI(board)
+    if key in (
+        "knowledgegraph",
+        "knowledge",
+        "adaptive",
+        "humaneasy",
+        "humanmedium",
+        "humanhard",
+        "humannightmare",
+        "human-easy",
+        "human-medium",
+        "human-hard",
+        "human-nightmare",
+    ):
+        from human_difficulty import create_human_opponent_ai
+
+        profile_file = os.environ.get("BATTLESHIP_PROFILE_FILE")
+        return create_human_opponent_ai(ai_type, board, profile_file=profile_file)
 
     # Fallback to HuntAndTarget for unknown names
     return HuntAndTargetAI(board)

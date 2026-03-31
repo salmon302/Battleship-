@@ -46,11 +46,13 @@ def _ensure_render_context():
     return surf
 
 class MultiAIGame:
-    def __init__(self, num_ais=4, attack_all=False, seed=None, render=True):
+    def __init__(self, num_ais=4, attack_all=False, seed=None, render=True, run_metadata=None, auto_save_results=True):
         self.num_ais = num_ais
         self.attack_all = attack_all # True: 1 attack to every other player, False: 1 attack to 1 random opponent
         self.seed = seed
         self.render = render
+        self.run_metadata = dict(run_metadata or {})
+        self.auto_save_results = bool(auto_save_results)
         if self.seed is not None:
             random.seed(self.seed)
         self.players = []
@@ -96,7 +98,20 @@ class MultiAIGame:
             
         # analytics collector
         try:
-            self.analytics = GameAnalytics(mode="MultiAI", num_players=num_ais, attack_all=self.attack_all, seed=self.seed)
+            analytics_meta = {
+                "ai_roster": [p["ai_logic"].__name__ for p in self.players],
+                "placement_roster": [p["placement_logic"].__name__ for p in self.players],
+                "grid_size": GRID_SIZE,
+            }
+            analytics_meta.update(self.run_metadata)
+
+            self.analytics = GameAnalytics(
+                mode="MultiAI",
+                num_players=num_ais,
+                attack_all=self.attack_all,
+                seed=self.seed,
+                run_metadata=analytics_meta,
+            )
             # Store AI class names AND placement names for better cross-experiment reporting
             self.analytics.player_ai_types = {
                 i: f"{p['ai_logic'].__name__}+{p['placement_logic'].__name__}" 
@@ -122,6 +137,20 @@ class MultiAIGame:
                 horizontal = random.choice([True, False])
                 placed = board.place_ship(ship, x, y, horizontal)
 
+    def _finalize_analytics(self):
+        if not self.analytics:
+            return
+        if self.analytics.end_time is not None:
+            return
+
+        try:
+            self.analytics.finalize(self.winner or "No one")
+            if self.auto_save_results:
+                jpath, _csv_path = self.analytics.save()
+                self.log.append(f"Results saved: {jpath}")
+        except Exception:
+            logger.exception("Failed to finalize/save analytics results")
+
     def get_opponents(self, current_id):
         return [p for p in self.players if p["id"] != current_id and p["alive"]]
 
@@ -143,6 +172,7 @@ class MultiAIGame:
             # Find the last standing survivor
             survivors = [p for p in self.players if p["alive"]]
             self.winner = survivors[0]["name"] if survivors else "No one"
+            self._finalize_analytics()
             return
 
         targets_to_attack = opponents if self.attack_all else [random.choice(opponents)]
@@ -184,14 +214,7 @@ class MultiAIGame:
                 if not remaining:
                     self.game_over = True
                     self.winner = current_player["name"]
-                    # finalize analytics and save
-                    if self.analytics:
-                        try:
-                            self.analytics.finalize(self.winner)
-                            jpath, cpath = self.analytics.save()
-                            self.log.append(f"Results saved: {jpath}")
-                        except Exception:
-                            logger.exception("Failed to finalize/save analytics results")
+                    self._finalize_analytics()
                     return
 
         self.next_turn()
@@ -201,6 +224,8 @@ class MultiAIGame:
         # Check if anyone is even alive
         if not any(p["alive"] for p in self.players): 
             self.game_over = True
+            self.winner = self.winner or "No one"
+            self._finalize_analytics()
             return
         # Skip dead players
         tries = 0

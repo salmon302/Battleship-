@@ -91,10 +91,14 @@ class Menu:
                 hunt_rect = pygame.Rect(center_x - 90, int(height * 0.33), 180, 40)
                 stat_rect = pygame.Rect(center_x - 90, int(height * 0.40), 180, 40)
                 mc_rect = pygame.Rect(center_x - 90, int(height * 0.47), 180, 40)
+                hm_rect = pygame.Rect(center_x - 90, int(height * 0.54), 180, 40)
+                hh_rect = pygame.Rect(center_x - 90, int(height * 0.61), 180, 40)
 
                 self.draw_button(surf, "Hunt & Target", hunt_rect, BLUE if self.ai_type == "HuntAndTarget" else GRAY, self.ai_type == "HuntAndTarget", hunt_rect.collidepoint(mouse_pos))
                 self.draw_button(surf, "Statistical (PDM)", stat_rect, BLUE if self.ai_type == "Statistical" else GRAY, self.ai_type == "Statistical", stat_rect.collidepoint(mouse_pos))
                 self.draw_button(surf, "Monte Carlo", mc_rect, BLUE if self.ai_type == "MonteCarlo" else GRAY, self.ai_type == "MonteCarlo", mc_rect.collidepoint(mouse_pos))
+                self.draw_button(surf, "Human KG (Med)", hm_rect, BLUE if self.ai_type == "HumanMedium" else GRAY, self.ai_type == "HumanMedium", hm_rect.collidepoint(mouse_pos))
+                self.draw_button(surf, "Human KG (Hard)", hh_rect, BLUE if self.ai_type == "HumanHard" else GRAY, self.ai_type == "HumanHard", hh_rect.collidepoint(mouse_pos))
 
             # PvE Tournament explanation
             if self.mode == "PvE_Tournament":
@@ -181,6 +185,8 @@ class Menu:
                         h_rect = pygame.Rect(center_x - 90, int(height * 0.33), 180, 40)
                         s_rect = pygame.Rect(center_x - 90, int(height * 0.40), 180, 40)
                         m_rect = pygame.Rect(center_x - 90, int(height * 0.47), 180, 40)
+                        hm_rect = pygame.Rect(center_x - 90, int(height * 0.54), 180, 40)
+                        hh_rect = pygame.Rect(center_x - 90, int(height * 0.61), 180, 40)
                         
                         if h_rect.collidepoint(pos):
                             self.ai_type = "HuntAndTarget"
@@ -188,6 +194,10 @@ class Menu:
                             self.ai_type = "Statistical"
                         if m_rect.collidepoint(pos):
                             self.ai_type = "MonteCarlo"
+                        if hm_rect.collidepoint(pos):
+                            self.ai_type = "HumanMedium"
+                        if hh_rect.collidepoint(pos):
+                            self.ai_type = "HumanHard"
 
                     if self.mode == "AIvAI":
                         # Rects must be recalculated here to avoid UnboundLocalError

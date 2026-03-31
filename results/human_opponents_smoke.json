@@ -1,0 +1,59 @@
+{
+  "profiles": {
+    "humaneasy": {
+      "name": "humaneasy",
+      "parity_weight": 0.6976042582736923,
+      "adjacency_weight": 0.9225427700437134,
+      "center_weight": -0.243606613443018,
+      "edge_weight": -0.6810990714434978,
+      "graph_weight": 0.6048003294790028,
+      "exploration_rate": 0.08,
+      "placement_edge_bias": -0.25175008464248505,
+      "placement_center_bias": -0.2187015452415681,
+      "placement_spread_bias": 0.023464419595335084
+    },
+    "humanmedium": {
+      "name": "humanmedium",
+      "parity_weight": 0.9122517223579052,
+      "adjacency_weight": 1.4257479173402843,
+      "center_weight": -0.34800944777574006,
+      "edge_weight": -0.9729986734907111,
+      "graph_weight": 1.0281605601143047,
+      "exploration_rate": 0.04380578044548765,
+      "placement_edge_bias": -0.37762512696372763,
+      "placement_center_bias": -0.32805231786235217,
+      "placement_spread_bias": 0.03519662939300263
+    },
+    "humanhard": {
+      "name": "humanhard",
+      "parity_weight": 1.073237320421065,
+      "adjacency_weight": 1.6773504909885697,
+      "center_weight": -0.34800944777574006,
+      "edge_weight": -0.9729986734907111,
+      "graph_weight": 1.2096006589580055,
+      "exploration_rate": 0.03369675418883665,
+      "placement_edge_bias": -0.4195834744041418,
+      "placement_center_bias": -0.3645025754026135,
+      "placement_spread_bias": 0.03910736599222514
+    },
+    "humannightmare": {
+      "name": "humannightmare",
+      "parity_weight": 1.1805610524631716,
+      "adjacency_weight": 1.8450855400874269,
+      "center_weight": -0.36540992016452706,
+      "edge_weight": -0.9729986734907111,
+      "graph_weight": 1.4515207907496066,
+      "exploration_rate": 0.023587727932185654,
+      "placement_edge_bias": -0.4405626481243489,
+      "placement_center_bias": -0.3827277041727442,
+      "placement_spread_bias": 0.0410627342918364
+    }
+  },
+  "metadata": {
+    "seed": 11,
+    "generations": 1,
+    "population": 4,
+    "games_per_eval": 1,
+    "best_score": 54.387
+  }
+}

@@ -1,0 +1,5 @@
+algorithm,games,wins,win_rate,shots,hits,accuracy,ships_sunk,avg_survival_turns,survival_rate,elo,strength_index
+HuntAndTargetAI+RandomPlacementAI,4,3,75.0,663,168,25.339,43,640.25,75.0,1053.811,58.577
+StatisticalAI+EdgePlacementAI,4,1,25.0,638,114,17.868,4,622.0,25.0,999.395,23.562
+HeatmapAI+OverlapPlacementAI,4,0,0.0,652,127,19.479,15,635.0,0.0,975.795,7.192
+ParityAI+DistributedPlacementAI,4,0,0.0,661,115,17.398,8,640.25,0.0,970.999,6.686

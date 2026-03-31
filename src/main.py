@@ -40,7 +40,17 @@ class BattleshipGame:
         self.setup_random_ships(self.ai_board)
         # Analytics
         try:
-            self.analytics = GameAnalytics(mode="PvE", num_players=2, attack_all=False)
+            self.analytics = GameAnalytics(
+                mode="PvE",
+                num_players=2,
+                attack_all=False,
+                run_metadata={
+                    "ai_type": self.ai_type,
+                    "ai_roster": ["HumanPlayer", self.ai.__class__.__name__],
+                    "placement_roster": ["RandomPlacement", "RandomPlacement"],
+                    "grid_size": GRID_SIZE,
+                },
+            )
         except Exception:
             self.analytics = None
         self.last_results = None

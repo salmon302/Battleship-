@@ -68,6 +68,7 @@ class TestAIs(unittest.TestCase):
         self.assertIsInstance(ai_module.create_pve_ai("HuntAndTarget", board), ai_module.HuntAndTargetAI)
         self.assertIsInstance(ai_module.create_pve_ai("Statistical", board), ai_module.StatisticalAI)
         self.assertIsInstance(ai_module.create_pve_ai("MonteCarlo", board), MonteCarloAI)
+        self.assertIsInstance(ai_module.create_pve_ai("humanhard", board), ai_module.BaseAI)
         self.assertIsInstance(ai_module.create_pve_ai("Unknown", board), ai_module.HuntAndTargetAI)
 
     def test_placement_strategies_place_full_fleet(self):

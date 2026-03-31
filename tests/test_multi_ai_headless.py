@@ -1,6 +1,7 @@
 import unittest
 
 from multi_ai import MultiAIGame
+from config import GRID_SIZE
 
 
 class TestMultiAIHeadless(unittest.TestCase):
@@ -14,6 +15,13 @@ class TestMultiAIHeadless(unittest.TestCase):
 
         self.assertTrue(game.game_over)
         self.assertGreater(max_turns, 0)
+
+        if game.analytics:
+            payload = game.analytics.to_dict()
+            self.assertEqual(len(payload.get("run_metadata", {}).get("ai_roster", [])), 2)
+            self.assertEqual(len(payload.get("run_metadata", {}).get("placement_roster", [])), 2)
+            self.assertEqual(payload.get("run_metadata", {}).get("grid_size"), GRID_SIZE)
+
         return game.winner, game.analytics.turns if game.analytics else None
 
     def test_seeded_headless_run_is_reproducible(self):
